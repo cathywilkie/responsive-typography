@@ -74,12 +74,12 @@ blockquote {
   max-width: 43em;
 }
 
-ol {
+article ol {
   padding: 0 1em;
   margin-bottom: 1.3rem;
 }
 
- @media only screen and (min-width: 38em) {
+@media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
