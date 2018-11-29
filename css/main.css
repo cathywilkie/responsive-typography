@@ -10,14 +10,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  line-height: 1.3;
   font-family: "Crimson Text", serif;
   color: #222;
 }
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
   padding: 1rem;
 }
 
@@ -31,23 +30,30 @@ article {
 
 article h1 {
   font-weight: normal;
+}
+
+h1 {
   margin: 0;
   padding-top: .3rem;
-  line-height: 1.3;
 }
 
 article header {
   border-bottom: 1px solid #999;
-  line-height: 1.3;
+  margin-bottom: 1.3rem;
 }
 
 article header p {
   font-style: italic;
-  margin-top: 0;
+  margin-bottom: 1.3rem;
 }
 
 article p {
-  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+}
+
+header p {
+  margin-top: 0;
 }
 
 article > p:last-child {
@@ -59,31 +65,36 @@ blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
-  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 1.3rem;
 }
 
 .quote {
   color: #999;
+  max-width: 43em;
+}
+
+ol {
+  padding: 0 1em;
+  margin-bottom: 1.3rem;
 }
 
  @media only screen and (min-width: 38em) {
 
   html {
-    margin: 0 5rem;
-    font-size: ;
-    line-height: 1.3;
+    font-size: 110%;
+    line-height: 1.4;
   }
 
-  article h1 {
-    font-size: 2rem;
+  article {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: .5em;
   }
 
-  article p {
-
-  }
-
-  article ol {
-
+  blockquote {
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }
@@ -91,13 +102,12 @@ blockquote {
 @media only screen and (min-width: 60em) {
 
   html {
-    margin: 0 3rem;
-    font-size: ;
+    font-size: 120%;
     line-height: 1.5;
   }
 
-  article h1 {
-    font-size: 2rem;
+  article {
+    margin-top: 1.2rem;
   }
 
 }
@@ -105,12 +115,7 @@ blockquote {
 @media only screen and (min-width: 90em) {
 
   html {
-    margin: 0 3rem;
-    font-size: ;
-  }
-
-  article h1 {
-    font-size: 3rem;
+    font-size: 130%;
   }
 
 }
